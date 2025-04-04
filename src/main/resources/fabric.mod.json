@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "onguard",
+	"version": "${version}",
+	"name": "On Guard",
+	"description": "uhhhhhh a shield testing thing",
+	"authors": [
+		"TheTrueYak"
+	],
+	"contact": {
+		"sources": "https://github.com/TheTrueYak/on-guard"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/onguard/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.yak.onguard.OnGuard"
+		],
+		"client": [
+			"net.yak.onguard.OnGuardClient"
+		],
+		"fabric-datagen": [
+			"net.yak.onguard.OnGuardDataGenerator"
+		]
+	},
+	"mixins": [
+		"onguard.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.12",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
